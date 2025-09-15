@@ -1,10 +1,13 @@
 import "./App.css";
+import NewProject from "./components/NewProject";
+import ProjectsSidebar from "./components/ProjectsSidebar";
 
 function App() {
     return (
-        <>
-            <h1 className="text-3xl font-bold underline">Hello Tailwind</h1>
-        </>
+        <main className="h-screen my-8 flex gap-8">
+            <ProjectsSidebar />
+            <NewProject />
+        </main>
     );
 }
 
